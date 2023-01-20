@@ -1,0 +1,76 @@
+
+
+import sys
+
+for line in sys.stdin:
+    if 'q' == line.rstrip():
+        break
+    print(f'Input : {line}')
+
+print("Exit")
+
+
+Content Sys Module >>
+
+
+stdin
+stdout
+stderr
+
+sys.exit()
+sys.path()
+sys.modules
+
+
+sys.setrecursionlimit()
+sys.getrecursionlimit()
+sys.settrace()
+sys.setswitchinterval()
+sys.maxsize()
+sys.maxint
+sys.getdefaultencoding()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+
+repo_url : https://github.com/sourabh-git123/angular_working.git
+username : sourabh-git123
+password : root123
+token : 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
+master_token : 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
+
+branch : master
+status : true
+operation :
+  - push
+  - commit
+  - checkout
+  - clone
+
+checkout_path : D:/git_clones/working_angular
+log_config_path : configuration_file/logging_conf.yml
+log_output_path : log
+
+#
+#This task will do following :
+#1. Take git checktout of angular_working private repo
+#2. do npm i - add node module
+#3. ng build
+#4. create docker image
+#5. Push to docker hub
+
+
+
+
+
+
+
+
+
+

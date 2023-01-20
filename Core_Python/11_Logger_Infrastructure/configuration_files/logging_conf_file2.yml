@@ -1,0 +1,89 @@
+version: 1
+formatters:
+  simple:  # file  --> same for both
+    format: '%(asctime)s  ====  %(name)s - %(levelname)s - %(message)s'
+  stdout : # console_formatter
+    format: '%(asctime)s ===>> %(levelname)s : %(funcName)s : %(message)s'
+
+handlers:
+  console:
+    class : logging.StreamHandler
+    formatter: simple
+    level   : INFO
+    stream  : ext://sys.stdout
+
+  file:
+    class : logging.handlers.RotatingFileHandler
+#    class : logging.FileHandler
+    formatter: stdout
+    level: INFO
+    filename: new_new_logconfig.log
+    mode: w
+
+    maxBytes: 2000
+    backupCount: 500
+#    name
+
+loggers:
+  sampleLogger:
+    level: DEBUG
+    handlers: [console, file]
+    propagate: no
+
+root:
+  level: WARNING
+  handlers: [console]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#{
+#	'formatter': {
+#		'simple': {
+#			'format': '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+#		},
+#		'handlers': {
+#			'console': {
+#				'class': 'logging.StreamHandler',
+#				'level': 'DEBUG',
+#				'formatter': 'simple',
+#				'stream': 'ext://sys.stdout'
+#			},
+#			'file': {
+#				'class': 'logging.fileHandler',
+#				'level': 'DEBUG',
+#				'formatter': 'simple'
+#			}
+#		},
+#		'loggers': {
+#			'sampleLogger': {
+#				'level': 'DEBUG',
+#				'handlers': ['console'],
+#				'propagate': False
+#			}
+#		},
+#		'root': {
+#			'level': 'DEBUG',
+#			'handlers': ['console']
+#		}
+#	}
+#}

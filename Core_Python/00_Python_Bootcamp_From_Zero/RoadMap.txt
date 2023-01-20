@@ -1,0 +1,29 @@
+
+        -------------------------------
+                Course Contents :
+        -------------------------------
+
+        1. Course Overview
+        2. Python Setup
+        3. Python Object and Data Structure Basics
+        4. Python Comparison Operator
+        5. Python Statements
+        6. Methods and Functions
+        7. Milestone Project - 1
+        8. Object Oriented Programming
+        9. Module and Packages
+        10. Errors and Exceptions Handling
+        11. Milestone Project - 2
+        12. Python Decorators
+        13. Python Generators
+        14. Advance Python Modules
+        15. Web Scraping with Python
+        16. Working with Images with Python
+        17. Working with PDFs and Spreadsheet CSV Files
+        18. Emails with Python
+        19. Final Capstone Project
+        20. Advanced Python Objects and Data Structure
+        21. Bonus - Introduction to GUIs
+
+
+

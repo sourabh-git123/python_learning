@@ -1,0 +1,89 @@
+
+repo_url : https://github.com/sourabh-git123/angular_working.git
+username : sourabh-git123
+password : root123
+token : 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
+master_token : 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
+
+# clone_query_string = 'https://%s:%s@%s' % (repo_username, token, repo_url[8:])
+# https://sourabh-git123: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@github.com/sourabh-git123/angular_working.git  --> Working for new project angular
+
+branch : master
+status : true
+
+operations :
+#  - dir
+  - md demo_angular
+  - cd demo_angular
+  -
+#  - git clone https://github.com/sourabh-git123/angular_working.git
+  - git clone https://github.com/Java-Techie-jt/springboot-crud-k8s.git
+  -
+  - cd spring_boot_project_java_techie
+#  - npm i
+#  - ng build
+#  - ng serve
+
+# All Paths
+checkout_path : D:/git_clones/latest_checkout/Spring_boot_project
+local_path : D:/
+log_config_file : configuration_file/logging_conf.yml
+log_output_file : logs/build_automation.log
+
+
+# login creds :  sourabhdoc123/rootroot123$
+# Creating Query string with token to clone git repository
+# query_string3 = 'https://sourabh-git123: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@github.com/sourabh-git123/Angular_Project1.git'
+# https://<username>:<githubtoken>@github.com/<username>/<repositoryname>.git
+#private_key : ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwHoNXSHkzT5qe8a7esfzNyYmQdK1Os4iYFymZpicLO8jts6k58TEk+PH4MYGaRQATNCNLbfQ+8IoiG5hwAys4Pe46oWjGEnb7CMu0ZaduSefgDwyjg9VJuwwRBvbS6pkLZggu+vGD2xQ2mCgu4avBfbdYWnl5vR75hhzhtYOw8Q1w2JSxMX3Rg9ebSZ9WecsCl2z/8kRLkw5exWz195pcXNdcQBAkS8wbW0aXL2adDGlnj7UdQLuxgUTGOc1veiOYnM+qvIBxRdGoOBQdZsp5zzV07X02Ouq7EN6MmB/Ge1ZK2eYZkCMRUcHLso/lmj18F8wbLh4IrOYGHT7zWow1 corp\sourabh.k@cumupunlpt107
+
+
+
+
+
+
+
+
+#
+#
+#<<< old working conf file >>>
+#
+#repo_url : https://github.com/sourabh-git123/angular_working.git
+#username : sourabh-git123
+#password : root123
+#token : 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
+#master_token : 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
+#
+## clone_query_string = 'https://%s:%s@%s' % (repo_username, token, repo_url[8:])
+## https://sourabh-git123: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@github.com/sourabh-git123/angular_working.git  --> Working for new project angular
+#
+#branch : master
+#status : true
+#
+#operations :
+##  - dir
+#  - md demo_angular
+#  - cd demo_angular
+#  -
+##  - git clone https://github.com/sourabh-git123/angular_working.git
+#  - git clone https://github.com/Java-Techie-jt/springboot-crud-k8s.git
+#  -
+#  - cd angular_working
+#  - npm i
+#  - ng build
+#  - ng serve
+#
+## All Paths
+#checkout_path : D:/git_clones/latest_checkout
+#local_path : D:/
+#log_config_file : configuration_file/logging_conf.yml
+#log_output_file : logs/build_automation.log
+#
+#
+## login creds :  sourabhdoc123/rootroot123$
+## Creating Query string with token to clone git repository
+## query_string3 = 'https://sourabh-git123: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@github.com/sourabh-git123/Angular_Project1.git'
+## https://<username>:<githubtoken>@github.com/<username>/<repositoryname>.git
+##private_key : ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwHoNXSHkzT5qe8a7esfzNyYmQdK1Os4iYFymZpicLO8jts6k58TEk+PH4MYGaRQATNCNLbfQ+8IoiG5hwAys4Pe46oWjGEnb7CMu0ZaduSefgDwyjg9VJuwwRBvbS6pkLZggu+vGD2xQ2mCgu4avBfbdYWnl5vR75hhzhtYOw8Q1w2JSxMX3Rg9ebSZ9WecsCl2z/8kRLkw5exWz195pcXNdcQBAkS8wbW0aXL2adDGlnj7UdQLuxgUTGOc1veiOYnM+qvIBxRdGoOBQdZsp5zzV07X02Ouq7EN6MmB/Ge1ZK2eYZkCMRUcHLso/lmj18F8wbLh4IrOYGHT7zWow1 corp\sourabh.k@cumupunlpt107
+#
+#

@@ -1,0 +1,84 @@
+version: 1
+formatters:
+  console_formatter:
+    format: '%(asctime)s : %(name)s : %(levelname)s : %(message)s'
+  file_formatter : # console_formatter
+    format: '%(asctime)s : %(levelname)s : %(funcName)s : %(message)s'
+
+handlers:
+  console_handler:
+    class : logging.StreamHandler
+    formatter: console_formatter
+    level   : INFO
+    stream  : ext://sys.stdout
+
+  file_handler:
+    # class : logging.handlers.RotatingFileHandler
+    class : logging.FileHandler
+    formatter: file_formatter
+    level: INFO
+    filename: logs/build_automation.log
+    mode: w
+
+#    maxBytes: 20000
+#    backupCount: 3
+#    name
+
+loggers:
+  sampleLogger:
+    level: DEBUG
+    handlers: [console_handler, file_handler]
+    propagate: no
+
+root:
+  level: WARNING
+  handlers: [console_handler, file_handler]
+
+
+
+
+
+
+
+
+#{
+#	'version': 1,
+#	'formatters': {
+#		'simple': {
+#			'format': '%(asctime)s  ====  %(name)s - %(levelname)s - %(message)s'
+#		},
+#		'stdout': {
+#			'format': '%(asctime)s ===>> %(levelname)s : %(funcName)s : %(message)s'
+#		}
+#	},
+#	'handlers': {
+#		'console': {
+#			'class': 'logging.StreamHandler',
+#			'formatter': 'simple',
+#			'level': 'INFO',
+#			'stream': 'ext://sys.stdout'
+#		},
+#		'file': {
+#			'class': 'logging.handlers.RotatingFileHandler',
+#			'formatter': 'stdout',
+#			'level': 'INFO',
+#			'filename': 'git_automation_log.log',
+#			'mode': 'w',
+#			'maxBytes': 2000,
+#			'backupCount': 500
+#		}
+#	},
+#	'loggers': {
+#		'sampleLogger': {
+#			'level': 'DEBUG',
+#			'handlers': ['console', 'file'],
+#			'propagate': False
+#		}
+#	},
+#	'root': {
+#		'level': 'WARNING',
+#		'handlers': ['console']
+#	}
+#}
+#
+

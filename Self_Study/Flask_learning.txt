@@ -1,0 +1,12 @@
+
+<< Flask Basic to Deployment >>
+------------------------------------
+
+
+pip3 install virtualenv
+
+virtualenv env				-> 
+
+source env/bin/activate		-> Activate virtual env
+
+
